@@ -35,7 +35,20 @@ Laporan Tugas 1 PKSJ : Uji Penetrasi
 3. Uji Penetrasi 1
     * THC-Hydra
       1. Cek IP Address dari kedua komputer
-      2. Jalankan hydra dengan perintah
+      2. Jalankan hydra diterminal dengan perintah
+            ketik hydra -ip address komputer yang akan diserang- -tipe- -s "port" -P "tempat menyimpan password" -l "user" -e "ns(n untuk null password, s login dengan password)" -t "berapakali percobaanaaa"
+            contohnya seperti berikut:
+            Reference-style: 
+            ![alt text][inputHydra]
+
+            [inputHydra]: https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-24_21-50-23.png "Input hydra"
+            
+            hasilnya jika berhasil dapat dilihat sebagai berikut
+            Reference-style: 
+            ![alt text][hasilHydra]
+
+            [hasilHydra]: https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-24_21-53-13.png "hasil hydra"
+            
       3. Selesai
 4. Uji Penetrasi 2
   * fail2ban
