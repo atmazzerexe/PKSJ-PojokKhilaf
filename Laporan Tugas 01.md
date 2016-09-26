@@ -54,6 +54,8 @@ Laporan Tugas 1 PKSJ : Uji Penetrasi
 
   * Ubuntu Server SSH
       1. Pilih SSH Server lalu Enter
+      
+      ![jalankan](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-24_22-34-41.png "jalankan")
 3. Uji Penetrasi 1
     * THC-Hydra
       1. Cek IP Address dari komputer yang akan diserang
