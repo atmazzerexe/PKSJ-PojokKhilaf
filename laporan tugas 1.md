@@ -39,9 +39,9 @@ Laporan Tugas 1 PKSJ : Uji Penetrasi
             ketik hydra -ip address komputer yang akan diserang- -tipe- -s "port" -P "tempat menyimpan password" -l "user" -e "ns(n untuk null password, s login dengan password)" -t "berapakali percobaanaaa"
             contohnya seperti berikut:
             Reference-style: 
-            ![alt text][inputHydra]
+            ![alt text][logo]
 
-            [inputHydra]: https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-24_21-50-23.png "Input hydra"
+            [logo]: https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-24_21-50-23.png "Input hydra"
             
             hasilnya jika berhasil dapat dilihat sebagai berikut
             Reference-style: 
