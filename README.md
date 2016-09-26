@@ -1,7 +1,6 @@
 # PKSJ-PojokKhilaf
 Repositori Kelompok Untuk Mata Kuliah PKSJ - Teknik Informatika ITS 2016/2017
 ##Laporan Tugas 1 PKSJ : Uji Penetrasi
-------------------------------------
 
 1. Teori
  * Ubuntu Server
