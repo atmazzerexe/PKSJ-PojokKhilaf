@@ -69,21 +69,34 @@ Laporan Tugas 1 PKSJ : Uji Penetrasi
       3. Selesai
 4. Uji Penetrasi 2
   * fail2ban
-
-  * Ubuntu Server SSH
-      1. Pilih SSH Server lalu Enter
-3. Uji Penetrasi 1
-    * THC-Hydra
-      1. Cek IP Address dari komputer yang akan diserang
-            ![mencariIp](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/ipaddress.PNG "Ip Address")
-      2. Jalankan hydra diterminal dengan perintah
-            ketik hydra -ip address komputer yang akan diserang- -tipe- -s "port" -P "tempat menyimpan password" -l "user" -e "ns(n untuk null password, s login dengan password)" -t "berapa kali percobaan yang dilakukan"
-            contohnya seperti berikut:
-            ![inputHydra](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-24_21-50-23.png "Input Hydra")
-            
-            hasilnya jika berhasil dapat dilihat sebagai berikut:
-            ![hasilHydra](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-24_21-53-13.png "Hasil Hydra")
-            
-      3. Selesai
-4. Uji Penetrasi 2
-  * fail2ban
+        1. Install fail2ban pada Ubuntu Server dengan perintah:
+        sudo apt-get install fail2ban
+        2. Copy isi dari jail.conf ke jail.local yang akan digunakan sebagai konfigurasi fail2ban nantinya
+        ![kopiKonten](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_16-16-03.png "Copy isi jail.conf")
+        3. Install iptables pada Ubuntu Server dengan perintah:
+        sudo apt-get install iptables-persistent
+        4. Stop service fail2ban untuk sementara dengan perintah:
+        sudo service fail2ban stop
+        5. Tambahkan rule firewall pada iptables. disini sebelumnya port SSH telah diubah sebelumnya menjadi 30000:
+        ![ruleFirewall](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_16-05-52.png "Add rule firewall")
+        cek kembali apakah rule telah masuk di iptables:
+        ![cekIPTABLES](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_16-06-29.png "Cek hasil iptables")    
+        6. Simpan perubahan rule dengan perintah:
+        sudo dpkg-reconfigure iptables-persistent
+        7. Mulai kembali fail2ban dengan perintah:
+        sudo service fail2ban start
+        8. Mulai perubahan konfigurasi jail.local:
+        Gambar 1:
+        ![jailLocal1](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-26_20-03-41.png "jail.local 1")
+        Gambar 2:    
+        ![jailLocal2](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_16-31-07.png "jail.local 2")
+        Gambar 3:
+        ![jailLocal3](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_16-23-08.png "jail.local 3")
+        Gambar 4:    
+        ![jailLocal4](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_16-21-03.png "jail.local 4")   
+        9. Hasilnya di Kali Linux:
+        Gambar 1 (Waktu yang diperlukan menjadi lebih lama):
+        ![kaliLinux1](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_17-37-43.png "Hasil di Kali Linux 1")        
+        Gambar 2 (Jika gagal 3 kali, IP address akan diblokir):    
+        ![kaliLinux2](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_18-48-26.png "Hasil di Kali Linux 2")
+        ![kaliLinux3](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_18-49-07.png "Hasil di Kali Linux 3")
