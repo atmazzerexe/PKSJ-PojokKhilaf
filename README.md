@@ -2,8 +2,6 @@
 Repositori Kelompok Untuk Mata Kuliah PKSJ - Teknik Informatika ITS 2016/2017
 ##Laporan Tugas 1 PKSJ : Uji Penetrasi
 
-berubah di github
-
 1. Teori
  * Ubuntu Server
         adalah versi server dari Ubuntu. Perbedaan dari UBuntu server dan Ubuntu biasa adalah tidak adanya X window environment di instalasi default ubuntu server dan beberapa perbedaan pada proses instalasi. Ubuntu server menggunakan interface berbasis teks. Ubuntu server mempunyai software server penting yang sudah terinstall, contohnya: Tomcat (v8), PostgreSQL (v9.5), Docker v(1.10), Puppet (v3.8.5), Qemu (v2.5), Libvirt (v1.3.1), LXC (v2.0), and MySQL (v5.6). sumber:https://en.wikipedia.org/wiki/Ubuntu_(operating_system)#Ubuntu_Server
