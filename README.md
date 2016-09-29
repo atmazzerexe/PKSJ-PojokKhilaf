@@ -2,7 +2,15 @@
 Repositori Kelompok Untuk Mata Kuliah PKSJ - Teknik Informatika ITS 2016/2017
 ##Laporan Tugas 1 PKSJ : Uji Penetrasi
 
-1. Teori
+1. Pendahuluan
+Tugas ini dibuat untuk menyelesaikan Tugas 1 pada matakuliah Perancangan Keamanan & Sistem Jaringan (PKSJ) Semester Ganjil 2016/2017, Teknik Informatika ITS, Surabaya
+ 
+Anggota Kelompok
+- Ilham Gurat Adillion          5113100077
+- Muhamad Rizki Prawiraatmaja   5113100120
+- Dimas Rahman Oetomo           5113100163
+
+2. Teori
  * Ubuntu Server
         adalah versi server dari Ubuntu. Perbedaan dari UBuntu server dan Ubuntu biasa adalah tidak adanya X window environment di instalasi default ubuntu server dan beberapa perbedaan pada proses instalasi. Ubuntu server menggunakan interface berbasis teks. Ubuntu server mempunyai software server penting yang sudah terinstall, contohnya: Tomcat (v8), PostgreSQL (v9.5), Docker v(1.10), Puppet (v3.8.5), Qemu (v2.5), Libvirt (v1.3.1), LXC (v2.0), and MySQL (v5.6). sumber:https://en.wikipedia.org/wiki/Ubuntu_(operating_system)#Ubuntu_Server
  
@@ -18,7 +26,7 @@ Repositori Kelompok Untuk Mata Kuliah PKSJ - Teknik Informatika ITS 2016/2017
  * fail2ban
         adalah intrusion prevention software yang melindungi komputer dari serangan brute force. fail2ban ditulis dalam bahasa python dan dapat berjalan pada sistem POSIX yang mempunyai interface untuk sistem kontrol paket atau firewall yang diinstal di lokal, contohnya iptables atau TCP Wrapper. sumber: https://en.wikipedia.org/wiki/Fail2ban
  
-2. Instalasi Kali Linux dan Ubuntu
+3. Instalasi Kali Linux dan Ubuntu
   1. Klik Baru
         
         ![tombolBaru](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/1.png "tombol baru")
@@ -57,7 +65,7 @@ Repositori Kelompok Untuk Mata Kuliah PKSJ - Teknik Informatika ITS 2016/2017
       1. Pilih SSH Server lalu Enter
       
       ![jalankan](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-24_22-34-41.png "jalankan")
-3. Uji Penetrasi 1
+4. Uji Penetrasi 1
     * THC-Hydra
       1. Cek IP Address dari komputer yang akan diserang
             ![mencariIp](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/ipaddress.PNG "Ip Address")
@@ -103,3 +111,6 @@ Repositori Kelompok Untuk Mata Kuliah PKSJ - Teknik Informatika ITS 2016/2017
         Gambar 2 (Jika gagal 3 kali, IP address akan diblokir):    
         ![kaliLinux2](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_18-48-26.png "Hasil di Kali Linux 2")
         ![kaliLinux3](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/2016-09-25_18-49-07.png "Hasil di Kali Linux 3")
+
+5. Kesimpulan dan Saran
+Password dan username yang umum dan mudah ditebak lebih mudah dibobol oleh tool penetrasi, sehingga berbahaya untuk keamanan data user. Fail2ban membantu mengurangi resiko kebobolan dengan melakukan proteksi dasar seperti melakukan IP block.
