@@ -22,13 +22,25 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  * **the mole** adalah tool SQL injection otomatis berbasis python. The mole menggunakan union technique atau teknik query berbasis boolean. Fiturnya mendunkung  injeksi berbasis Mysql, SQL Server, Postgres dan Oracle, interface command line, auto-complete perintah, mendukung filter, exploit dari GET/POST/cooki, python 3, exploit sql injection binary, kesederhanaan penggunaan (sumber: http://kali4hackers.blogspot.co.id/2014/07/the-mole-for-kali-linux.html)
  
 3. Keterangan plugin
- * **LeagueManager** adalah plugin yang digunakan untuk menampilkan informasi tentang liga olahraga pada blog pengguna. Fitur leaguemanager yang digunakan adalah 
+ * **LeagueManager** adalah plugin yang digunakan untuk menampilkan informasi tentang liga olahraga pada blog pengguna. Fitur leaguemanager yang digunakan adalah 3.9.1
  
- * **Video Player** adalah plugin yang digunakan untuk menambahkan video pada website user. versi video player yang digunakan adalah
- 
- * **Broken Link Manager** adalah plugin yang digunakan untuk mengecek, mengatur dan memonitor backlink pada website user yang sudah rusak. versi broken link manager yang digunakan adalah
+ * **Video Player** adalah plugin yang digunakan untuk menambahkan video pada website user. versi video player yang digunakan adalah 1.5.16
 
-3. Instalasi Wordpress
+3. Instalasi Wordpress dan LAMP
+ * update wpscan
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/38.png "virtual hdd")
+ * lakukan scan vulnearbility pada website
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/32.png "virtual hdd")
+ * didapatkan plugin yang vulnerable
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/33.png "virtual hdd")
+ * lakukan scan username pada website
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/34.png "virtual hdd")
+ * username didapatkan
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/35.png "virtual hdd")
+ * lakukan scan password pada website
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/36.png "virtual hdd")
+ * password didapatkan
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/37.png "virtual hdd")
 
 4. Penetrasi dengan sqlmap
 
