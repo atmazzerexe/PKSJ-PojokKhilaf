@@ -49,3 +49,4 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
 6. Penetrasi dengan the mole
 
 7. Kesimpulan dan Saran
+ * plug in dan versi wordpress yang digunakan harus up to date untuk mengurangi celah untuk di exploit.
