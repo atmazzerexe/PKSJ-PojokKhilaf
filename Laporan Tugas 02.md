@@ -56,7 +56,18 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  * dalam /var/www/html buat file info.php berisikan "<?php phpinfo();", lalu akses dengan lynx. jika keluar halaman info maka instalasi berhasil (lynx http://192.168.56.101/info.php)
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/12.png "virtual hdd")
  * download dan install wordpress, lalu buat database pada shell mysql (mysql -u root -p)
-    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/13.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/13.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/17.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/18.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/19.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/20.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/21.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/22.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/23.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/24.png "virtual hdd")
+ * Install Plugin yang vulnerable
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/26.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/25.png "virtual hdd")
  
 4. Penetrasi dengan sqlmap
  * karena sqlmap sudah terinstall didalam Kali Linux maka langsung menscan database mysql melalui Plugin LeagueManager
