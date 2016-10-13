@@ -19,8 +19,6 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  
  * **wpscan** WPScan adalah blackbox WordPress vulnerability scanner yang dapat digunakan untuk men-scan instalasi remote wordpress untuk mendapatkan celah keamanan (sumber: http://tools.kali.org/web-applications/wpscan)
  
- * **the mole** adalah tool SQL injection otomatis berbasis python. The mole menggunakan union technique atau teknik query berbasis boolean. Fiturnya mendunkung  injeksi berbasis Mysql, SQL Server, Postgres dan Oracle, interface command line, auto-complete perintah, mendukung filter, exploit dari GET/POST/cooki, python 3, exploit sql injection binary, kesederhanaan penggunaan (sumber: http://kali4hackers.blogspot.co.id/2014/07/the-mole-for-kali-linux.html)
- 
  * **sqlsus** adalah tool sql injection open source berbasis perl. dari command line, bisa didapatkan informasi mengenai struktur database, inject sql query, download file, crawling website, upload dan control backdoor, cloning database dan lain-lain. (sumber: http://tools.kali.org/vulnerability-analysis/sqlsus)
  
 3. Keterangan plugin
@@ -61,10 +59,13 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/13.png "virtual hdd")
  
 4. Penetrasi dengan sqlmap
- * karena sqlmap sudah terinstall didalam kali linux maka langsung menscan database mysql melalui plug in league manager
+ * karena sqlmap sudah terinstall didalam Kali Linux maka langsung menscan database mysql melalui Plugin LeagueManager
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/29.png "virtual hdd")
  * Dapat ditemukan ada celah untuk injeksi
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/30.png "virtual hdd")
+ * Hasil serupa juga dapat ditemukan pada Plugin CP Reservation Calendar
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/39.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/41.png "virtual hdd")
 
 5. Penetrasi dengan wpscan
  * update wpscan
@@ -84,6 +85,15 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/37.png "virtual hdd")
 
 6. Penetrasi dengan sqlsus
+ * Karena sudah terinstall pada Kali Linux maka pengguna dapat melakukan generate file konfigurasi dari sqlsus
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/42.png "virtual hdd")
+ * Ubah isi konfigurasi dari sqlsus dengan alamat serang yang dituju, jenis serangannya, serta metode penyerangannya
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/43.png "virtual hdd")
+ * jalankan sqlsus dengan file konfigurasi yang sudah diubah sebelumnya
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/44.png "virtual hdd")
+ * start sqlsus, jika berhasil, username akan terlihat
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/45.png "virtual hdd")
+
 
 7. Kesimpulan dan Saran
  * plug in dan versi wordpress yang digunakan harus up to date untuk mengurangi celah untuk di exploit.
