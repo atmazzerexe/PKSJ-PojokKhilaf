@@ -21,12 +21,46 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  
  * **the mole** adalah tool SQL injection otomatis berbasis python. The mole menggunakan union technique atau teknik query berbasis boolean. Fiturnya mendunkung  injeksi berbasis Mysql, SQL Server, Postgres dan Oracle, interface command line, auto-complete perintah, mendukung filter, exploit dari GET/POST/cooki, python 3, exploit sql injection binary, kesederhanaan penggunaan (sumber: http://kali4hackers.blogspot.co.id/2014/07/the-mole-for-kali-linux.html)
  
+ * **sqlsus** adalah tool sql injection open source berbasis perl. dari command line, bisa didapatkan informasi mengenai struktur database, inject sql query, download file, crawling website, upload dan control backdoor, cloning database dan lain-lain. (sumber: http://tools.kali.org/vulnerability-analysis/sqlsus)
+ 
 3. Keterangan plugin
  * **LeagueManager** adalah plugin yang digunakan untuk menampilkan informasi tentang liga olahraga pada blog pengguna. Fitur leaguemanager yang digunakan adalah 3.9.1
  
  * **Video Player** adalah plugin yang digunakan untuk menambahkan video pada website user. versi video player yang digunakan adalah 1.5.16
+ 
+ * **CP Reservation Calendar** adalah plugin yang digunakan untuk melakukan pemilhan tanggal dari kalendar untuk reservasi. versi CP reservation calendar yang digunakan adalah 1.1.6
 
 3. Instalasi Wordpress dan LAMP
+ * Install Apache (sudo apt-get install apache2)
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/00.png "virtual hdd")
+ * Atur server name (sudo nano /etc/apache2/apache2.conf) lalu restart apache
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/01.png "virtual hdd")
+ * Enable ufw firewall (sudo ufw app list)
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/02.png "virtual hdd")
+ * Apache punya akses di port 80 dan 443 (sudo ufw app info "Apache Full")
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/03.png "virtual hdd")
+ * Meng-allow incoming traffic (sudo ufw allow in "Apache Full")
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/04.png "virtual hdd")
+ * Apache berhasil, Server dapat diakses via lynx (lynx http://192.168.56.101)
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/05.png "virtual hdd")
+ * Install MySQL (sudo apt-get install mysql-server) dan atur keamanan (sudo mysql_secure_installation)
+ * Install PHP (sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql)
+ * Atur agar Apache memprioritaskan untuk membuka file index.php (sudo nano /etc/apache2/mods-enabled/dir.conf)
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/07.png "virtual hdd")
+ * Cek status Apache (sudo systemctl status apache2) lalu restart apache (sudo systemctl restart apache2)
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/11.png "virtual hdd")
+ * lihat list PHP Modules yang bisa diinstall
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/09.png "virtual hdd")
+ * Install PHPModules (sudo apt-get install)
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/10.png "virtual hdd")
+ * dalam /var/www/html buat file info.php berisikan "<?php phpinfo();", lalu akses dengan lynx. jika keluar halaman info maka instalasi berhasil (lynx http://192.168.56.101/info.php)
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/12.png "virtual hdd")
+ * download dan install wordpress, lalu buat database pada shell mysql (mysql -u root -p)
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/13.png "virtual hdd")
+ 
+4. Penetrasi dengan sqlmap
+
+5. Penetrasi dengan wpscan
  * update wpscan
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/38.png "virtual hdd")
  * lakukan scan vulnearbility pada website
@@ -42,11 +76,9 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  * password didapatkan
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/37.png "virtual hdd")
 
-4. Penetrasi dengan sqlmap
-
-5. Penetrasi dengan wpscan
-
 6. Penetrasi dengan the mole
+
+7. Penetrasi dengan sqlsus
 
 7. Kesimpulan dan Saran
  * plug in dan versi wordpress yang digunakan harus up to date untuk mengurangi celah untuk di exploit.
