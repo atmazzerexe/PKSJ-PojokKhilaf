@@ -19,8 +19,6 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  
  * **wpscan** WPScan adalah blackbox WordPress vulnerability scanner yang dapat digunakan untuk men-scan instalasi remote wordpress untuk mendapatkan celah keamanan (sumber: http://tools.kali.org/web-applications/wpscan)
  
- * **the mole** adalah tool SQL injection otomatis berbasis python. The mole menggunakan union technique atau teknik query berbasis boolean. Fiturnya mendunkung  injeksi berbasis Mysql, SQL Server, Postgres dan Oracle, interface command line, auto-complete perintah, mendukung filter, exploit dari GET/POST/cooki, python 3, exploit sql injection binary, kesederhanaan penggunaan (sumber: http://kali4hackers.blogspot.co.id/2014/07/the-mole-for-kali-linux.html)
- 
  * **sqlsus** adalah tool sql injection open source berbasis perl. dari command line, bisa didapatkan informasi mengenai struktur database, inject sql query, download file, crawling website, upload dan control backdoor, cloning database dan lain-lain. (sumber: http://tools.kali.org/vulnerability-analysis/sqlsus)
  
 3. Keterangan plugin
