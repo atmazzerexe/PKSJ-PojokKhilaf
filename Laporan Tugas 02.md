@@ -44,7 +44,9 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  * Apache berhasil, Server dapat diakses via lynx (lynx http://192.168.56.101)
     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/05.png "virtual hdd")
  * Install MySQL (sudo apt-get install mysql-server) dan atur keamanan (sudo mysql_secure_installation)
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/06_2.png "virtual hdd")
  * Install PHP (sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql)
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/06.png "virtual hdd")
  * Atur agar Apache memprioritaskan untuk membuka file index.php (sudo nano /etc/apache2/mods-enabled/dir.conf)
     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/07.png "virtual hdd")
  * Cek status Apache (sudo systemctl status apache2) lalu restart apache (sudo systemctl restart apache2)
@@ -62,6 +64,7 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
 
 5. Penetrasi dengan wpscan
  * update wpscan
+ 
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/38.png "virtual hdd")
  * lakukan scan vulnearbility pada website
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/32.png "virtual hdd")
