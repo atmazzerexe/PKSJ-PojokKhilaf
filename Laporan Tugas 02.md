@@ -61,6 +61,10 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/13.png "virtual hdd")
  
 4. Penetrasi dengan sqlmap
+ * karena sqlmap sudah terinstall didalam kali linux maka langsung menscan database mysql melalui plug in league manager
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/29.png "virtual hdd")
+ * Dapat ditemukan ada celah untuk injeksi
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/30.png "virtual hdd")
 
 5. Penetrasi dengan wpscan
  * update wpscan
@@ -79,9 +83,7 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  * password didapatkan
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/37.png "virtual hdd")
 
-6. Penetrasi dengan the mole
-
-7. Penetrasi dengan sqlsus
+6. Penetrasi dengan sqlsus
 
 7. Kesimpulan dan Saran
  * plug in dan versi wordpress yang digunakan harus up to date untuk mengurangi celah untuk di exploit.
