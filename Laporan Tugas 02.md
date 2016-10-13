@@ -92,7 +92,7 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
  * jalankan sqlsus dengan file konfigurasi yang sudah diubah sebelumnya
     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/44.png "virtual hdd")
  * start sqlsus, jika berhasil, username akan terlihat
-    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/45.png "virtual hdd")
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/45.jpg "virtual hdd")
 
 
 7. Kesimpulan dan Saran
