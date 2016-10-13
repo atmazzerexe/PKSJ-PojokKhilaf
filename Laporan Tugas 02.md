@@ -55,17 +55,21 @@ Tugas ini dibuat untuk menyelesaikan Tugas 2 pada matakuliah Perancangan Keamana
     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/10.png "virtual hdd")
  * dalam /var/www/html buat file info.php berisikan "<?php phpinfo();", lalu akses dengan lynx. jika keluar halaman info maka instalasi berhasil (lynx http://192.168.56.101/info.php)
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/12.png "virtual hdd")
- * download dan install wordpress, lalu buat database pada shell mysql (mysql -u root -p)
+ * buat database pada shell mysql (mysql -u root -p)
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/13.png "virtual hdd")
+ * download dan install wordpress, lalu atur kepemilikan folder wordpress
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/17.png "virtual hdd")
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/18.png "virtual hdd")
-   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/19.png "virtual hdd")
+ * Tambahkan string autentikasi yang disediakan langsung oleh wordpress
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/19.png "virtual hdd")  
+ * Ubah konfigurasi database wordpress dengan setting yang sudah dibuat sebelumnya
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/20.png "virtual hdd")
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/21.png "virtual hdd")
+ * Lakukan instalasi dengan menggunakan browser GUI biasa
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/22.png "virtual hdd")
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/23.png "virtual hdd")
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/24.png "virtual hdd")
- * Install Plugin yang vulnerable
+ * Pasang Plugin yang vulnerable
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/26.png "virtual hdd")
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T2/25.png "virtual hdd")
  
