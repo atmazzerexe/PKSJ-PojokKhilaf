@@ -85,34 +85,43 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
  VBoxManage list vms 2>&1 >> /dev/null
  
  * **cek jalannya cuckoo** dengan perintah ./cuckoo.py
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo1.png "virtual hdd")
  
  ** Pada mesin virtual lakukan instalasi virtual windows XP**
  
  * **buat definisi mesin virtual windows XP**
-  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo2.png "virtual hdd")
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo2.png "virtual hdd")
   
  * **alokasikan RAM pada virtual Windows XP**
-   ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo3.png "virtual hdd")
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo3.png "virtual hdd")
 
  * **buat storage VDI**
-   ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo4.png "virtual hdd")
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo4.png "virtual hdd")
  
  * **attach VDI pada virtual machine**
-    ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo5.png "virtual hdd")
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo5.png "virtual hdd")
 
  * **download dan tautkan ISO windows XP**
-    ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo6.png "virtual hdd")
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo6.png "virtual hdd")
     
  * **jalankan virtual windows XP**
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo8.png "virtual hdd")
  
  * **tampilkan via rdesktop 192.168.56.1**
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo9.png "virtual hdd")
  
  * **lakukan instalasi windows XP**
 
  * **tambahkan interface network NAT sekunder** agar dapat terkoneksi dengan internet
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo11.png "virtual hdd")
  
  **Pada virtual WIndows  XP**
@@ -120,21 +129,62 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
  * **install python**
  
  * **disable autoupdates**
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo12.png "virtual hdd")
  
  * **disable firewall**
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo13.png "virtual hdd")
  
  * **install adobe reader**
  
  * **install agent cuckoo**
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo14.png "virtual hdd")
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo15.png "virtual hdd")
  
  * **hapus NIC**
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo16.png "virtual hdd")
  
  * **ambil snapshot**
+ 
  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo17.png "virtual hdd")
+ 
+ **Konfigurasi Cuckoo**
+ 
+ * **cek apakah konek dengan internet** dengan membandingkan ip virtual XP dengan yang ddisimpan di konfigurasi VBox
+
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo18.png "virtual hdd")
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo19.png "virtual hdd")
+
+ * **jalankan cuckoo.py**
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo21.png "virtual hdd")
+ 
+ * **cek apakah server bisa mengakses guest virtual machine**
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo23.png "virtual hdd")
+ 
+ **Analisa Malware**
+ 
+ * **buka versi web dengan menjlankan ./utils/web.py**
+
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo30.png "virtual hdd")
+
+ * **hasil analisa terlihat di web interface**
+ 
+ **MEnjalankan malware sebagai normal user** karena berbahaya jika diakses lewat root
+ 
+ * **rubah home directory user cuckoo**
+ 
+  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo32.png "virtual hdd")
+  
+ * **jalankan cuckoo.py**
+ 
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo33.png "virtual hdd")
+
 
 5. Kesimpulan
