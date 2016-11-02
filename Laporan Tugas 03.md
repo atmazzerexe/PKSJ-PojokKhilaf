@@ -35,7 +35,7 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
   **Pada komputer HOST lakukan**
 
   * **buat sebuah mesin virtual dengan OS Ubuntu**
-  
+  ** **Klik imstall Ubuntu**
   * **lakukan update dan upgrade mesin virtual ubuntu** dengan perintah 
 # sudo apt-get update
 # sudo apt-get upgrade
