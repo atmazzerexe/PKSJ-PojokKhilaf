@@ -32,6 +32,109 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
 
 4. Dokumentasi Tahapan Pengerjaan
 
+  **Pada komputer HOST lakukan**
+
+  * **buat sebuah mesin virtual dengan OS Ubuntu**
   
+  * **lakukan update dan upgrade mesin virtual ubuntu** dengan perintah 
+# sudo apt-get update
+# sudo apt-get upgrade
+
+  **Pada mesin virtual lakukan**
+
+  * **install dependensi cuckoo** dengan perintah ated malware analysis framework. When installing Cuckoo for the first time, we can quickly determine that it's not all that easy to install Cuckoo [1]. Therefore, to ease the pain we've described the process of how to install Cuckoo on Debian operating system together will all dependencies.
+# apt-get install python python-sqlalchemy python-bson python-dpkt python-jinja2 python-magic python-pymongo python-gridfs python-libvirt python-bottle python-pefile bridge-utils python-pyrex
+# pip install jinja2 pymongo bottle pefile cybox maec django chardet
+
+  * **install tcpdump** digunakan untuk sniff packet pada jaringan, dengan perintah
+# apt-get install tcpdump
+# setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+
+ * **install pydeep**
+ 
+ * **install yara
+ 
+ * **install yara-python** dengan perintah
+# pip install yara-python
+
+ * **install distorm**
+ 
+ * **install volatility**
+ 
+ * **lakukakn setting** untuk menghindari error pada Virtual Box dengan perintah
+# apt-get install build-essential linux-headers-`uname -r` libvpx1
+ 
+ * **install virtual box** dengan mendownload dan menginstall virtual box terbaru dari websitenya
+ 
+ * **install extension pack virtual box**
+ 
+ * **install rdesktop** untuk dapat menampilkan headless V-Box
+ 
+ * **tambah user cuckoo** dengan perintah
+# adduser cuckoo
+# usermod -G vboxusers cuckoo
+
+ * **install cuckoo** dengan mendowload cuckoo terbaru dari websitenya, lalu mengekstrak tar yang didapat
+ 
+ * **Buat networking interface untuk Virtual Box** pada ip 192.168.56.1/24 dengan perintah
+# VBoxManage hostonlyif create
+# ip link set vboxnet0 up
+# ip addr add 192.168.56.1/24 dev vboxnet0
+
+ * **set networking interface pada Virtual Box** agar otomatis load saat startup dengan menambah line berikut pada /etc/rc.local
+ VBoxManage list vms 2>&1 >> /dev/null
+ 
+ * **cek jalannya cuckoo** dengan perintah ./cuckoo.py
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo1.png "virtual hdd")
+ 
+ ** Pada mesin virtual lakukan instalasi virtual windows XP**
+ 
+ * **buat definisi mesin virtual windows XP**
+  ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo2.png "virtual hdd")
+  
+ * **alokasikan RAM pada virtual Windows XP**
+   ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo3.png "virtual hdd")
+
+ * **buat storage VDI**
+   ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo4.png "virtual hdd")
+ 
+ * **attach VDI pada virtual machine**
+    ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo5.png "virtual hdd")
+
+ * **download dan tautkan ISO windows XP**
+    ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo6.png "virtual hdd")
+    
+ * **jalankan virtual windows XP**
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo8.png "virtual hdd")
+ 
+ * **tampilkan via rdesktop 192.168.56.1**
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo9.png "virtual hdd")
+ 
+ * **lakukan instalasi windows XP**
+
+ * **tambahkan interface network NAT sekunder** agar dapat terkoneksi dengan internet
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo11.png "virtual hdd")
+ 
+ **Pada virtual WIndows  XP**
+ 
+ * **install python**
+ 
+ * **disable autoupdates**
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo12.png "virtual hdd")
+ 
+ * **disable firewall**
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo13.png "virtual hdd")
+ 
+ * **install adobe reader**
+ 
+ * **install agent cuckoo**
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo14.png "virtual hdd")
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo15.png "virtual hdd")
+ 
+ * **hapus NIC**
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo16.png "virtual hdd")
+ 
+ * **ambil snapshot**
+ ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo17.png "virtual hdd")
 
 5. Kesimpulan
