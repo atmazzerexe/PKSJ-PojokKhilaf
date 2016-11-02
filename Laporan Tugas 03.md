@@ -35,7 +35,20 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
   **Pada komputer HOST lakukan**
 
   * **buat sebuah mesin virtual dengan OS Ubuntu**
-  ** **Klik imstall Ubuntu**
+  * **Klik install Ubuntu**
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install.PNG "virtual hdd")
+  * **Klik Download Updates ketika install Ubuntu dan klik continue**
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install2.PNG "virtual hdd")
+  * **Pilih Erase disk untuk mempermudah instalasi dan klik continue**
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install3.PNG "virtual hdd")
+  * **pilih asal tempat**
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install4.PNG "virtual hdd")
+  * **pilih keyboard layout**
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install5.PNG "virtual hdd")
+  * **Menunggu Instalasi selesai**
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install6.PNG "virtual hdd")
+  * **Setelah restart ubuntu siap digunakan**
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install7.PNG "virtual hdd")
   * **lakukan update dan upgrade mesin virtual ubuntu** dengan perintah 
 # sudo apt-get update
 # sudo apt-get upgrade
