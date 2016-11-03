@@ -49,30 +49,61 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install6.PNG "virtual hdd")
   * **Setelah restart ubuntu siap digunakan**
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/install7.PNG "virtual hdd")
-  * **lakukan update dan upgrade mesin virtual ubuntu** dengan perintah 
-# sudo apt-get update
-# sudo apt-get upgrade
+  * **lakukan update dan upgrade mesin virtual ubuntu** dengan perintah
+      # sudo apt-get update
+      # sudo apt-get upgrade
 
   **Pada mesin virtual lakukan**
 
-  * **install dependensi cuckoo** dengan perintah ated malware analysis framework. When installing Cuckoo for the first time, we can quickly determine that it's not all that easy to install Cuckoo [1]. Therefore, to ease the pain we've described the process of how to install Cuckoo on Debian operating system together will all dependencies.
-# apt-get install python python-sqlalchemy python-bson python-dpkt python-jinja2 python-magic python-pymongo python-gridfs python-libvirt python-bottle python-pefile bridge-utils python-pyrex
-# pip install jinja2 pymongo bottle pefile cybox maec django chardet
+  * **install dependensi cuckoo** dengan perintah
+      # apt-get install python python-sqlalchemy python-bson python-dpkt python-jinja2 python-magic python-pymongo python-gridfs python-libvirt python-bottle python-pefile bridge-utils python-pyrex
+      # pip install jinja2 pymongo bottle pefile cybox maec django chardet
 
   * **install tcpdump** digunakan untuk sniff packet pada jaringan, dengan perintah
-# apt-get install tcpdump
-# setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+      # apt-get install tcpdump
+      # setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
 
  * **install pydeep**
+     - download dan extract ssdeep dengan perintah
+       - wget http://sourceforge.net/projects/ssdeep/files/ssdeep-2.12/ssdeep-2.12.tar.gz
+       - tar xvzf ssdeep-2.12.tar.gz
+     - jalankan konfigurasi dan instalasi dengan perintah
+       - cd ssdeep-2.12/
+       - ./configure && make && make install
+     - kloning ambil data pydeep
+       - git clone https://github.com/kbandla/pydeep
+     - build dan install pydeep
+       - python setup.py build
+       - python setup.py install
  
- * **install yara
+ * **install yara**
+     - download dan extract yara dengan perintah
+       - wget https://github.com/VirusTotal/yara/archive/v3.5.0.tar.gz
+       - tar xvzf v3.5.0.tar.gz
+     - jalankan instalasi dengan perintah
+       - cd yara-3.5.0/
+       - ./bootstrap.sh
  
  * **install yara-python** dengan perintah
 # pip install yara-python
 
  * **install distorm**
+     - download dan extract distorm dengan perintah
+       - wget https://github.com/gdabah/distorm/archive/v3.3.4.tar.gz
+       - tar xvzf v3.3.4.tar.gz
+     - build dan install distorm
+       - cd distorm-3.3.4/
+       - python setup.py build
+       - python setup.py install
  
  * **install volatility**
+      - download dan extract volatility dengan perintah
+       - wget https://github.com/volatilityfoundation/volatility/archive/2.5.tar.gz
+       - tar xvzf 2.5.tar.gz
+     - build dan install volatility
+       - cd volatility-2.5/
+       - python setup.py build
+       - python setup.py install
  
  * **lakukakn setting** untuk menghindari error pada Virtual Box dengan perintah
 # apt-get install build-essential linux-headers-`uname -r` libvpx1
