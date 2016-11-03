@@ -56,61 +56,104 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
   **Pada mesin virtual lakukan**
 
   * **install dependensi cuckoo** dengan perintah
-      # apt-get install python python-sqlalchemy python-bson python-dpkt python-jinja2 python-magic python-pymongo python-gridfs python-libvirt python-bottle python-pefile bridge-utils python-pyrex
-      # pip install jinja2 pymongo bottle pefile cybox maec django chardet
+
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L1.png "virtual hdd")
+    
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L2.png "virtual hdd")
 
   * **install tcpdump** digunakan untuk sniff packet pada jaringan, dengan perintah
-      # apt-get install tcpdump
-      # setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+      
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L3.png "virtual hdd")
 
  * **install pydeep**
      - download dan extract ssdeep dengan perintah
        - wget http://sourceforge.net/projects/ssdeep/files/ssdeep-2.12/ssdeep-2.12.tar.gz
        - tar xvzf ssdeep-2.12.tar.gz
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L4.png "virtual hdd")
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L5.png "virtual hdd")
+       
      - jalankan konfigurasi dan instalasi dengan perintah
        - cd ssdeep-2.12/
        - ./configure && make && make install
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L6.png "virtual hdd")
+       
      - kloning ambil data pydeep
        - git clone https://github.com/kbandla/pydeep
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L7.png "virtual hdd")
+       
      - build dan install pydeep
        - python setup.py build
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L8.png "virtual hdd")
+       
        - python setup.py install
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L9.png "virtual hdd")
  
  * **install yara**
      - download dan extract yara dengan perintah
        - wget https://github.com/VirusTotal/yara/archive/v3.5.0.tar.gz
        - tar xvzf v3.5.0.tar.gz
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L10.png "virtual hdd")
+       
      - jalankan instalasi dengan perintah
        - cd yara-3.5.0/
        - ./bootstrap.sh
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L11.png "virtual hdd")
  
  * **install yara-python** dengan perintah
-# pip install yara-python
+     
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L12.png "virtual hdd")
 
  * **install distorm**
      - download dan extract distorm dengan perintah
        - wget https://github.com/gdabah/distorm/archive/v3.3.4.tar.gz
        - tar xvzf v3.3.4.tar.gz
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L13.png "virtual hdd")
+       
      - build dan install distorm
        - cd distorm-3.3.4/
        - python setup.py build
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L14.png "virtual hdd")
+       
        - python setup.py install
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L15.png "virtual hdd")
  
  * **install volatility**
       - download dan extract volatility dengan perintah
        - wget https://github.com/volatilityfoundation/volatility/archive/2.5.tar.gz
        - tar xvzf 2.5.tar.gz
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L16.png "virtual hdd")
+       
      - build dan install volatility
        - cd volatility-2.5/
        - python setup.py build
        - python setup.py install
+       
+       ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L17.png "virtual hdd")
  
  * **lakukakn setting** untuk menghindari error pada Virtual Box dengan perintah
-# apt-get install build-essential linux-headers-`uname -r` libvpx1
+     
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L18.png "virtual hdd")
  
  * **install virtual box** dengan mendownload dan menginstall virtual box terbaru dari websitenya
  
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L19.png "virtual hdd")
+     
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L20.png "virtual hdd")
+ 
  * **install extension pack virtual box**
+ 
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L21.png "virtual hdd")
  
  * **install rdesktop** untuk dapat menampilkan headless V-Box
  
