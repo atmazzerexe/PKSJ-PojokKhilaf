@@ -157,33 +157,40 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
  
  * **install rdesktop** untuk dapat menampilkan headless V-Box
  
+      ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L22.png "virtual hdd")
+ 
  * **tambah user cuckoo** dengan perintah
-# adduser cuckoo
-# usermod -G vboxusers cuckoo
+ 
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L23.png "virtual hdd")
 
  * **install cuckoo** dengan mendowload cuckoo terbaru dari websitenya, lalu mengekstrak tar yang didapat
  
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L24.png "virtual hdd")
+     
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L25.png "virtual hdd")
+ 
  * **Buat networking interface untuk Virtual Box** pada ip 192.168.56.1/24 dengan perintah
-# VBoxManage hostonlyif create
-# ip link set vboxnet0 up
-# ip addr add 192.168.56.1/24 dev vboxnet0
+ 
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L26.png "virtual hdd")
 
  * **set networking interface pada Virtual Box** agar otomatis load saat startup dengan menambah line berikut pada /etc/rc.local
  VBoxManage list vms 2>&1 >> /dev/null
  
+     ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L27.png "virtual hdd")
+ 
  * **cek jalannya cuckoo** dengan perintah ./cuckoo.py
  
- ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo1.png "virtual hdd")
+      ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L28.png "virtual hdd")
  
  ** Pada mesin virtual lakukan instalasi virtual windows XP**
  
  * **buat definisi mesin virtual windows XP**
  
- ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo2.png "virtual hdd")
+ ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L29.png "virtual hdd")
   
  * **alokasikan RAM pada virtual Windows XP**
  
- ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo3.png "virtual hdd")
+ ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L30.png "virtual hdd")
 
  * **buat storage VDI**
  
