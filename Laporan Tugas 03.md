@@ -194,19 +194,19 @@ Tugas ini dibuat untuk menyelesaikan Tugas 3 pada matakuliah Perancangan Keamana
 
  * **buat storage VDI**
  
- ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo4.png "virtual hdd")
+ ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L33.png "virtual hdd")
  
  * **attach VDI pada virtual machine**
  
- ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo5.png "virtual hdd")
+ ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L34.png "virtual hdd")
 
  * **download dan tautkan ISO windows XP**
  
- ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo6.png "virtual hdd")
+ ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L35.png "virtual hdd")
     
  * **jalankan virtual windows XP**
  
- ![virtualHDD](https://www.proteansec.com/images/2015/02/cuckoo8.png "virtual hdd")
+ ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T3/L36.png "virtual hdd")
  
  * **tampilkan via rdesktop 192.168.56.1**
  
