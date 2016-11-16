@@ -24,6 +24,11 @@ Tugas ini dibuat untuk menyelesaikan Tugas 4 pada matakuliah Perancangan Keamana
 
 3. Instalasi Ossec dan Agent Ossec
 
+ * Install build-essential dengan mengetik
+ ```# apt-get install build-essential```
+ 
+ * Install mysql-dev dan postgresql-dev dengan mengetik
+ ```# apt-get install mysql-dev postgresql-dev```
 
   
 
