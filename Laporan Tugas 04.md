@@ -25,10 +25,51 @@ Tugas ini dibuat untuk menyelesaikan Tugas 4 pada matakuliah Perancangan Keamana
 3. Instalasi Ossec dan Agent Ossec
 
  * Install build-essential dengan mengetik
- ```# apt-get install build-essential```
+   `# apt-get install build-essential`
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/1.png "virtual hdd")
  
  * Install mysql-dev dan postgresql-dev dengan mengetik
- ```# apt-get install mysql-dev postgresql-dev```
+   `# apt-get install mysql-dev postgresql-dev`
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/2.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/3.png "virtual hdd")
 
-  
+ * Download file instalasi ossec dengan mengetik
+   '# wget -U ossec https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz'
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/4.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/5.png "virtual hdd")
+   '# wget -U ossec https://raw.githubusercontent.com/ossec/ossec-docs/master/docs/whatsnew/checksums/2.8.3/ossec-hids-2.8.3.tar.gz.sha256'
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/6.png "virtual hdd")
+   
+ * Cek data downloadan dengan perintah
+   '# cat ossec-hids-2.8.3.tar.gz.sha256'
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/7.png "virtual hdd")
+   
+ * Untar file yang didownload
+   '# tar -zxvf ossec-hids-*.tar.gz (or gunzip -d; tar -xvf)'
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/8.png "virtual hdd")
 
+ * Install ossec dengan perintah 
+   '# ./install.sh'
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/9.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/10.png "virtual hdd")
+
+ * ossec sudah bisa dijalankan dengan perintah
+   '# /var/ossec/bin/ossec-control start'
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/11.png "virtual hdd")
+
+ * download install ossec client pada windows dengan link https://bintray.com/artifact/download/ossec/ossec-hids/ossec-agent-win32-2.8.3.exe
+ 
+ * jalankan ossec client, masukkan IP virtual
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/12.png "virtual hdd")
+
+ * untuk mendapatkan key, tambahkan agen dengan mengerun perintah
+   '# /var/ossec/bin/manage_agents'
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/13.png "virtual hdd")
+   
+ * isi data-data agen yang diperlukan
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/14.png "virtual hdd")
+
+ * lalu didapatkan key untuk ossec client
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/15.png "virtual hdd")
+
+4. Kesimpulan
