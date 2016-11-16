@@ -6,7 +6,7 @@ Anggota Kelompok
 - Muhamad Rizki Prawiraatmaja   5113100120
 - Dimas Rahman Oetomo           5113100163
 
-1.Pendahuluan
+1. Pendahuluan
 
 Tugas ini dibuat untuk menyelesaikan Tugas 4 pada matakuliah Perancangan Keamanan & Sistem Jaringan (PKSJ) Semester Ganjil 2016/2017, Teknik Informatika ITS, Surabaya. Pada tugas ini digunakan tools Ossec yang berjalan di Linux, serta OS yang dideteksi pergerakannya adalah Windows 10. Tugas bertujuan untuk dapat memahami cara deteksi intruse di os yang ditetapkan sebagai agent dengan tools Ossex.
 
@@ -21,6 +21,9 @@ Tugas ini dibuat untuk menyelesaikan Tugas 4 pada matakuliah Perancangan Keamana
   * **Intrusion Detection System** IDS merupakan perangkat atau aplikasi perangkat lunak yang memonitor jaringan untuk mengetahui aktivitas intrusi yang terjadi. Setiap intrusi yang ditangkap akan dilaporkan ke administrator atau di kumpulkan menggunakan security information and event management (SIEM) sistem. (sumber: https://en.wikipedia.org/wiki/Intrusion_detection_system)
   
   * **Ossec** Ossec merupakan aplikasi host-based intrusion detection system(HIDS) yang open-source. Program ini melakukan log analysis, integrity checking, windows registry monitoring, rootkit detection, time based a;erting, dan active response, Ossec dapat mendeteksi intrusi berbagai macam sistem operasi salah satunya adalah Linux, OpenBSD, FreeBSD, OS X, Solaris and Windows. (Sumber: https://en.wikipedia.org/wiki/OSSEC)
-  
+
+3. Instalasi Ossec dan Agent Ossec
+
+
   
 
