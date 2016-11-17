@@ -88,7 +88,6 @@ Tugas ini dibuat untuk menyelesaikan Tugas 4 pada matakuliah Perancangan Keamana
  * masukkan key ke windows agent, ossec agent siap dijalankan
  
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/24.png "virtual hdd")
- 
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/21.png "virtual hdd")
    
  * untuk keperluan pengujian, pada agent dibuatlah sebuah folder dummy ('C:\Masuk") beserta file-nya
@@ -102,7 +101,6 @@ Tugas ini dibuat untuk menyelesaikan Tugas 4 pada matakuliah Perancangan Keamana
  * tambahkan pula konfigurasi untuk mencatat log event windows beserta jenis-jenis event yang terjadi
 
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/25.png "virtual hdd")
-   
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/26.png "virtual hdd")
    
  * restart ossec server, lalu mulai perubahan data pada windows agent, misal dengan merubah user permission dari folder "C:\Masuk"
