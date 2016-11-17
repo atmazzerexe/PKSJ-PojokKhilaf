@@ -83,6 +83,35 @@ Tugas ini dibuat untuk menyelesaikan Tugas 4 pada matakuliah Perancangan Keamana
 
  * lalu didapatkan key untuk ossec client
  
-   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/15.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/20.png "virtual hdd")
+    
+ * masukkan key ke windows agent, ossec agent siap dijalankan
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/24.png "virtual hdd")
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/21.png "virtual hdd")
+   
+ * untuk keperluan pengujian, pada agent dibuatlah sebuah folder dummy ('C:\Masuk") beserta file-nya
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/22.png "virtual hdd")
+ 
+ * kemudian di server ossec, dengan menggunakan gedit dan autentikasi root, tambahkan konfigurasi untuk mengawasi folder di agent windows secara real-time, melaporkan perubahan file, serta meningkatkan frekuensi pengecekan
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/23.png "virtual hdd") 
 
+ * tambahkan pula konfigurasi untuk mencatat log event windows beserta jenis-jenis event yang terjadi
+
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/25.png "virtual hdd")
+   
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/26.png "virtual hdd")
+   
+ * restart ossec server, lalu mulai perubahan data pada windows agent, misal dengan merubah user permission dari folder "C:\Masuk"
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/27.png "virtual hdd")
+ 
+ * simpan perubahan dan peringatan akan muncul pada log file ossec yang terletak di /var/ossec/logs/alerts/alerts.log
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T4/27.png "virtual hdd")
+   
 4. Kesimpulan
+ * Ossec memiliki kelebihan dibandingkan snort dimana instalasi dan perubahan rule dapat dilakukan lebih mudah. Namun, kompatibilitas dengan OS Windows 8 Ke atas masih dipertanyakan karena terdapat beberapa fungsi yang tidak bekerja seperti pengaplikasian rule dari server ke Windows.
