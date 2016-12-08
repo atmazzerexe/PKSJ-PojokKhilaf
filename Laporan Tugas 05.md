@@ -74,7 +74,7 @@ Tugas ini dibuat untuk menyelesaikan Tugas 5 pada matakuliah Perancangan Keamana
 
  * jalankan metasploit console. TUnggu karena startnya agak lama sampai muncul gambar demikian
  
-   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m10.png "virtual hdd")
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m11.png "virtual hdd")
  
 4. Penyerangan 1: admin/tikiwiki/tikidblib
  
