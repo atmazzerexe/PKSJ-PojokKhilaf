@@ -84,7 +84,7 @@ Tugas ini dibuat untuk menyelesaikan Tugas 5 pada matakuliah Perancangan Keamana
  
  *
  
-6. Penyerangan tambahan: unreal ircd
+6. Penyerangan 3 tambahan: unreal ircd
  
  * Lakukan nmap -O 192.168.179.102 untuk cek port yang ada. didapat port irc
  
@@ -122,6 +122,48 @@ Tugas ini dibuat untuk menyelesaikan Tugas 5 pada matakuliah Perancangan Keamana
  
    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m19.png "virtual hdd")
 
+7. Penyerangan 4 tambahan: vsftpd
 
-7. Kesimpulan
+ * perintahkan msf console untuk menggunakan vsftpd
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t1.png "virtual hdd")
+   
+ * lakukan exploit
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t2.png "virtual hdd")
+   
+ * postexploit
+ 
+  ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t3.png "virtual hdd")
+
+
+8. Penyerangan 5 tambahan: usermap_script
+
+ * perintahkan msf console untuk menggunakan usermap_script
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t4.png "virtual hdd")
+   
+ * lakukan exploit dan didapat hasil postexploit
+ 
+  ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t5.png "virtual hdd")
+  
+ 8. Penyerangan 5 tambahan: java_rmi_server
+
+ * perintahkan msf console untuk menggunakan java_rmi_server
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t6.png "virtual hdd")
+   
+ * lakukan exploit
+ 
+  ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t7.png "virtual hdd")
+  
+ * hasil postexploit
+ 
+  ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t8.png "virtual hdd")
+  ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/t9.png "virtual hdd")
+
+
+
+. Kesimpulan
+
  *
