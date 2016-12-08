@@ -84,5 +84,44 @@ Tugas ini dibuat untuk menyelesaikan Tugas 5 pada matakuliah Perancangan Keamana
  
  *
  
-5. Kesimpulan
+6. Penyerangan tambahan: unreal ircd
+ 
+ * Lakukan nmap -O 192.168.179.102 untuk cek port yang ada. didapat port irc
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m12.png "virtual hdd")
+
+ * cari tool yang sesuai dengan search unreal_ircd
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m13.png "virtual hdd")
+
+ * perintahkan msfconsole untuk menggunakan unreal ircd dengan sintaks use exploit/unix/irc/unreal_ircd_3281_backdoor
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m14.png "virtual hdd")
+   
+ * set host yang akan diserang
+ 
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m15.png "virtual hdd")
+
+ * lakukan exploit
+ 
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m16.png "virtual hdd")
+
+ * didapatkan sebuah sesi. tembus ke shell metasploit dengan session itu. dengan perintah whoami didapat kita telah masuk ke user root. dengan perintah hostname didapat kalau komputer yang ditembus adalah metasploitable. dengan peintah grep root /etc/shadow didapat password dari root
+ 
+    ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m17.png "virtual hdd")
+    
+ * didapat daftar password pada cat /etc/shadow
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m17b.png "virtual hdd")
+
+ * perbandingan ls antara msf console dan metasploitable
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m18.png "virtual hdd")
+
+ * perbandingan msf console dan metasploitable jika dilakukan touch (membuat file)
+ 
+   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m19.png "virtual hdd")
+
+
+7. Kesimpulan
  *
