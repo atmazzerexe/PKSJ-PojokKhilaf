@@ -12,7 +12,13 @@ Tugas ini dibuat untuk menyelesaikan Tugas 5 pada matakuliah Perancangan Keamana
 
 2. Teori
 
- *
+ * **Penetration Testing** adalah penyerangan secara sengaja ke sistem komputer dengan maksud untuk menemukan celah keamanan, titik lemah sekuritas sistem, memastikan keamanan suatu sistem dan mendapat akses pada sistem dengan cara mengeksploitasi celah-celah keamanan yang ada. Tahapan pada penetration testing adalah preinteraction, intelligence gathering, threat modelling, vulnerability analysis, exploitation, post-exploitation dan reporting
+ 
+ * **Exploit** adalah sebuah software, sekumpulan data atau sekumpulan command yang memanfaatkan bug atau celah keamanan pada sistem. Exploit menyebabkan kelakuan yang tidak diinginkan atau tidak diduga pada software atau hardware komputer target
+ 
+ * **Metasploit** adalah proyek keamanan komputer yang dapat memberi informasi tentang kelemahan sistem dengan cara dapat melakukan penetration testing dan pengembangan IDS signature. Metasploit framework adalah tool open source yang dapat digunakan untuk mengembangkan dan mengeksekusi kode eksploitasi keamanan pada target machine secara remote. 
+ 
+ * **Metasploitable** adlah mesin virtual Ubuntu Linux yang dibuat secara sengaja untuk memiliki berbagai celah keamanan. Metasploitable didesain sebagai alat untuk tool security testing atau mendemonstrasikan celah-celah keamanan yang umum.
 
 3. Instalasi Metasploit dan Metasploitable
 
