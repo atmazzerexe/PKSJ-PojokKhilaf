@@ -46,7 +46,7 @@ Tugas ini dibuat untuk menyelesaikan Tugas 5 pada matakuliah Perancangan Keamana
  
   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m2.png "virtual hdd")
   
- * Install metasploit. Pastikan antivirus
+ * Install metasploit. Pastikan antivirus, windows UAC dan firewall sudah mati
  
   ![virtualHDD](https://github.com/atmazzerexe/PKSJ-PojokKhilaf/blob/master/Gambar/T5/m3.png "virtual hdd")
 
